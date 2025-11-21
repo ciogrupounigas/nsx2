@@ -93,7 +93,8 @@ Siga estos pasos para configurar y ejecutar rápidamente los parametros esencial
 5. Turnos: Verifique que no tenga turnos abiertos antes de iniciar operación
 ![Turnos](./assets/turnos.png)
 6. MID el precio del dispensador debe corresponder al aplicado en el Totem: `MID Digital`
-7. Isleros: (Vendedores de Servicio) Configure los datos de cada empleado que estara asignado en la distribución de combustible. ![Isleros](./assets/isleros.png)
+7. Isleros: (Vendedores de Servicio) Configure los datos de cada empleado que estara asignado en la distribución de combustible.
+![Isleros](./assets/isleros.png)
 8. Create a [bearer token](#general-environment-variables)
 9. Set the required environment variables:
 
