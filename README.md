@@ -11,6 +11,7 @@ El Software de Administración y Monitoreo, cubre diferentes necesidades de las 
 Permite administrar variedad de precios por cada combustible, que pueden ser usados en la asignación de beneficios a clientes corporativos. Se puede realizar reparación remotamente cualquier posible daño del sistema.
 
 ![Sistema](./assets/sistema.png)
+
 La operación de venta la puedes trabajar desde cualquier dispositivo ANDROID.
 
 Los controles ANTIFRAUDE que hemos desarrollado nos permiten dar seguridad en la operación.
