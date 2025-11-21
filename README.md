@@ -1,10 +1,10 @@
 # Sistema de Control NSX 2
 Desarrollado por Grupo Empresarial Insepet
 
-Software de Administración y Monitoreo para Estaciones de Servicio - Combustibles Unigas SAS y Automotores Reina SAS.
-![Example Custom GPT Screenshot](/assets/example.png)
+Software de Administración y Monitoreo para Estaciones de Servicio - Grupo Unigas
+![Grupo Empresarial Insepet](./assets/LogoInsepet-scaled.png)
 
-## Introduction
+## Introducción
 
 The ChatGPT Retrieval Plugin repository provides a flexible solution for semantic search and retrieval of personal or organizational documents using natural language queries. It is a standalone retrieval backend, and can be used with [ChatGPT custom GPTs](https://chat.openai.com/gpts/discovery), [function calling](https://platform.openai.com/docs/guides/function-calling) with the [chat completions](https://platform.openai.com/docs/guides/text-generation) or [assistants APIs](https://platform.openai.com/docs/assistants/overview), or with the [ChatGPT plugins model (deprecated)](https://chat.openai.com/?model=gpt-4-plugins). ChatGPT and the Assistants API both natively support retrieval from uploaded files, so you should use the Retrieval Plugin as a backend only if you want more granular control of your retrieval system (e.g. document text chunk length, embedding model / size, etc.).
 
