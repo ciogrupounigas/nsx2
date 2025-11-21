@@ -1,4 +1,4 @@
-# Sistema de Control NSX 2
+# Sistema de Control NSX-2
 Desarrollado por Grupo Empresarial Insepet
 
 Software de Administración y Monitoreo para Estaciones de Servicio - Grupo Unigas
