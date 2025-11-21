@@ -1,7 +1,7 @@
-# Sistema de Control NSX
+# Sistema de Control NSX 2
 Desarrollado por Grupo Empresarial Insepet
 
-Build Custom GPTs with a Retrieval Plugin backend to give ChatGPT access to personal documents.
+Software de Administración y Monitoreo para Estaciones de Servicio - Combustibles Unigas SAS y Automotores Reina SAS.
 ![Example Custom GPT Screenshot](/assets/example.png)
 
 ## Introduction
