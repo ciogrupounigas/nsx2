@@ -76,7 +76,8 @@ Siga estos pasos para configurar y ejecutar rápidamente los parametros esencial
 ![Sesión](./assets/sesion.png)
 2. Verifique las opciones activas para su perfil de administrador.
 ![Menu](./assets/menu.png)
-3. Navigate to the cloned repository directory: `cd /path/to/chatgpt-retrieval-plugin`
+3.  Cortes: Configure las cantidad de cortes que aplica en la estación de servicio.
+![Cortes](./assets/cortes.png)
 4. Cortes: Configure las catidad de cortes que aplica en la estación de servicio.
 ![Cortes](./assets/sesion.png)
 5. Create a new virtual environment with Python 3.10: `poetry env use python3.10`
