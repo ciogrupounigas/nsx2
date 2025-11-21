@@ -16,7 +16,6 @@ La operación de venta la puedes trabajar desde cualquier dispositivo ANDROID.
 
 Los controles ANTIFRAUDE que hemos desarrollado nos permiten dar seguridad en la operación.
 
-
 Problemas recurrentes como la contaminación de vehículos son cosas del pasado ya que TU ELIGES el producto y la posición donde vas a despachar el combustible.
 
 ![Arquitectura](./assets/arquitectura.png)
