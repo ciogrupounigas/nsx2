@@ -86,11 +86,10 @@ Siga estos pasos para configurar y ejecutar rápidamente los parametros esencial
 ![Sesión](./assets/sesion.png)
 2. Verifique las opciones activas para su perfil de administrador.
 ![Menu](./assets/menu.png)
-3.  Cortes: Configure las cantidad de cortes que aplica en la estación de servicio.
+3. Cortes: Configure las cantidad de cortes que aplica en la estación de servicio.
 ![Cortes](./assets/cortes.png)
-4. Cortes: Configure las catidad de cortes que aplica en la estación de servicio.
-![Cortes](./assets/sesion.png)
-5. Create a new virtual environment with Python 3.10: `poetry env use python3.10`
+4. Turnos: Configure el nivel de precio del MDI que aplica en la estación de servicio. ![Turnos](./assets/turnos.png)
+5. Isleros: (Vendedores de Servicio) Configure los datos de cada empleado que estara asignado en la distribución de combustible. ![Isleros](./assets/isleros.png)
 6. Activate the virtual environment: `poetry shell`
 7. Install app dependencies: `poetry install`
 8. Create a [bearer token](#general-environment-variables)
