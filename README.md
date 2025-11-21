@@ -10,11 +10,11 @@ El Software de Administración y Monitoreo, cubre diferentes necesidades de las 
 
 Permite administrar variedad de precios por cada combustible, que pueden ser usados en la asignación de beneficios a clientes corporativos. Se puede realizar reparación remotamente cualquier posible daño del sistema.
 
-The repository is organized into several directories:
+El repositorio está organizado en varios directorios:
 
 | Directory                       | Description                                                                                                                |
 | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| [`datastore`](/datastore)       | Contains the core logic for storing and querying document embeddings using various vector database providers.              |
+| [`datastore`](/datastore)       | Contiene la lógica principal de parametros que se debe tener encuenta en el sistema.              |
 | [`docs`](/docs)                 | Includes documentation for setting up and using each vector database provider, webhooks, and removing unused dependencies. |
 | [`examples`](/examples)         | Provides example configurations, authentication methods, and provider-specific examples.                                   |
 | [`local_server`](/local_server) | Contains an implementation of the Retrieval Plugin configured for localhost testing.                                       |
@@ -25,7 +25,7 @@ The repository is organized into several directories:
 | [`tests`](/tests)               | Includes integration tests for various vector database providers.                                                          |
 | [`.well-known`](/.well-known)   | Stores the plugin manifest file and OpenAPI schema, which define the plugin configuration and API specification.           |
 
-This README provides detailed information on how to set up, develop, and deploy the ChatGPT Retrieval Plugin (stand-alone retrieval backend).
+Este archivo README proporciona información detallada sobre cómo configurar, desarrollar e implementar las funcionalidades del NSX-2 (Manual para Administración y Vendedor de Servicio).
 
 ## Table of Contents
 
