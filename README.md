@@ -6,7 +6,9 @@ Software de Administración y Monitoreo para Estaciones de Servicio - Grupo Unig
 
 ## Introducción
 
-The ChatGPT Retrieval Plugin repository provides a flexible solution for semantic search and retrieval of personal or organizational documents using natural language queries. It is a standalone retrieval backend, and can be used with [ChatGPT custom GPTs](https://chat.openai.com/gpts/discovery), [function calling](https://platform.openai.com/docs/guides/function-calling) with the [chat completions](https://platform.openai.com/docs/guides/text-generation) or [assistants APIs](https://platform.openai.com/docs/assistants/overview), or with the [ChatGPT plugins model (deprecated)](https://chat.openai.com/?model=gpt-4-plugins). ChatGPT and the Assistants API both natively support retrieval from uploaded files, so you should use the Retrieval Plugin as a backend only if you want more granular control of your retrieval system (e.g. document text chunk length, embedding model / size, etc.).
+El Software de Administración y Monitoreo, cubre diferentes necesidades de las Estaciones de Servicio (EDS) desde facturación hasta el soporte, enfocado siempre en lograr excelencia en el servicio. Visualización de los estados de operación de los equipos, permitiendo conocer los combustibles y valores programados, el estado de los despachos y las condiciones de operación de cada posición de llenado.
+
+Permite administrar variedad de precios por cada combustible, que pueden ser usados en la asignación de beneficios a clientes corporativos. Se puede realizar reparación remotamente cualquier posible daño del sistema.
 
 The repository is organized into several directories:
 
