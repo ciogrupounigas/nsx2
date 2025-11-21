@@ -27,7 +27,7 @@ El repositorio está organizado en varios directorios:
 
 Este archivo README proporciona información detallada sobre cómo configurar, desarrollar e implementar las funcionalidades del NSX-2 (Manual para Administración y Vendedor de Servicio).
 
-## Table of Contents
+## Tabla de Contenido
 
 - [Quickstart](#quickstart)
 - [About](#about)
@@ -70,10 +70,11 @@ Este archivo README proporciona información detallada sobre cómo configurar, d
 
 ## Quickstart
 
-Follow these steps to quickly set up and run the ChatGPT Retrieval Plugin:
+Siga estos pasos para configurar y ejecutar rápidamente los parametros esenciales para la distribución de Combustible:
 
-1. Install Python 3.10, if not already installed.
-2. Clone the repository: `git clone https://github.com/openai/chatgpt-retrieval-plugin.git`
+1. Inicie sesión con credenciales de Administrador (Usuario y Paswword).
+2. Cortes: Configure las catidad de cortes que aplica en la estación de servicio.
+![Grupo Empresarial Insepet](./assets/LogoInsepet-scaled.png)
 3. Navigate to the cloned repository directory: `cd /path/to/chatgpt-retrieval-plugin`
 4. Install poetry: `pip install poetry`
 5. Create a new virtual environment with Python 3.10: `poetry env use python3.10`
