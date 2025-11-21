@@ -73,10 +73,12 @@ Este archivo README proporciona información detallada sobre cómo configurar, d
 Siga estos pasos para configurar y ejecutar rápidamente los parametros esenciales para la distribución de Combustible:
 
 1. Inicie sesión con credenciales de Administrador (Usuario y Paswword).
-2. Cortes: Configure las catidad de cortes que aplica en la estación de servicio.
-![Grupo Empresarial Insepet](./assets/LogoInsepet-scaled.png)
+![Sesión](./assets/sesion.png)
+2. Verifique las opciones activas para su perfil de administrador.
+![Menu](./assets/menu.png)
 3. Navigate to the cloned repository directory: `cd /path/to/chatgpt-retrieval-plugin`
-4. Install poetry: `pip install poetry`
+4. Cortes: Configure las catidad de cortes que aplica en la estación de servicio.
+![Cortes](./assets/sesion.png)
 5. Create a new virtual environment with Python 3.10: `poetry env use python3.10`
 6. Activate the virtual environment: `poetry shell`
 7. Install app dependencies: `poetry install`
