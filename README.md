@@ -41,7 +41,7 @@ Este archivo README proporciona información detallada sobre cómo configurar, d
 
 - [Quickstart](#quickstart)
 - [About](#about)
-  - [Retrieval Plugin](#retrieval-plugin)
+  - [Funcionalidades](#funcionalidades)
   - [Retrieval Plugin with custom GPTs](#retrieval-plugin-with-custom-gpts)
   - [Retrieval Plugin with function calling](#retrieval-plugin-with-function-calling)
   - [Retrieval Plugin with the plugins model (deprecated)](#chatgpt-plugins-model)
@@ -116,7 +116,7 @@ Siga estos pasos para configurar y ejecutar rápidamente los parametros esencial
 
 ## About
 
-### Retrieval Plugin
+### Funcionalidades
 
 This is a standalone retrieval backend that can be used with [ChatGPT custom GPTs](https://chat.openai.com/gpts/discovery), [function calling](https://platform.openai.com/docs/guides/function-calling) with the [chat completions](https://platform.openai.com/docs/guides/text-generation) or [assistants APIs](https://platform.openai.com/docs/assistants/overview), or with the [ChatGPT plugins model (deprecated)](https://chat.openai.com/?model=gpt-4-plugins).
 
