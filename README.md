@@ -95,131 +95,17 @@ Siga estos pasos para configurar y ejecutar rápidamente los parametros esencial
 6. MID el precio del dispensador debe corresponder al aplicado en el Totem: `MID Digital`
 7. Isleros: (Vendedores de Servicio) Configure los datos de cada empleado que estara asignado en la distribución de combustible.
 ![Isleros](./assets/isleros.png)
-8. Create a [bearer token](#general-environment-variables)
-9. Set the required environment variables:
+9. El sistema ya estaria disponible para iniciar ventas:
 
    ```
-   export DATASTORE=<your_datastore>
-   export BEARER_TOKEN=<your_bearer_token>
-   export OPENAI_API_KEY=<your_openai_api_key>
-   export EMBEDDING_DIMENSION=256 # edit this value based on the dimension of the embeddings you want to use
-   export EMBEDDING_MODEL=text-embedding-3-large # edit this based on your model preference, e.g. text-embedding-3-small, text-embedding-ada-002
+   Las claves de los vendedores de servicio son intransferibles
+   
+   La clave del administrador es intransferible y no debe quedar activa la sesion mientras no este presente el responsable de la misma.
 
-   # Optional environment variables used when running Azure OpenAI
-   export OPENAI_API_BASE=https://<AzureOpenAIName>.openai.azure.com/
-   export OPENAI_API_TYPE=azure
-   export OPENAI_EMBEDDINGMODEL_DEPLOYMENTID=<Name of embedding model deployment>
-   export OPENAI_METADATA_EXTRACTIONMODEL_DEPLOYMENTID=<Name of deployment of model for metatdata>
-   export OPENAI_COMPLETIONMODEL_DEPLOYMENTID=<Name of general model deployment used for completion>
-   export OPENAI_EMBEDDING_BATCH_SIZE=<Batch size of embedding, for AzureOAI, this value need to be set as 1>
+   El sistema esta diseñado para que el vendedor de servcio distribuya en cualquier isla ydispensador sin necesidad de estacionarlo en una posición predeterminada.
 
-   # Add the environment variables for your chosen vector DB.
-   # Some of these are optional; read the provider's setup docs in /docs/providers for more information.
-
-   # Pinecone
-   export PINECONE_API_KEY=<your_pinecone_api_key>
-   export PINECONE_ENVIRONMENT=<your_pinecone_environment>
-   export PINECONE_INDEX=<your_pinecone_index>
-
-   # Weaviate
-   export WEAVIATE_URL=<your_weaviate_instance_url>
-   export WEAVIATE_API_KEY=<your_api_key_for_WCS>
-   export WEAVIATE_CLASS=<your_optional_weaviate_class>
-
-   # Zilliz
-   export ZILLIZ_COLLECTION=<your_zilliz_collection>
-   export ZILLIZ_URI=<your_zilliz_uri>
-   export ZILLIZ_USER=<your_zilliz_username>
-   export ZILLIZ_PASSWORD=<your_zilliz_password>
-
-   # Milvus
-   export MILVUS_COLLECTION=<your_milvus_collection>
-   export MILVUS_HOST=<your_milvus_host>
-   export MILVUS_PORT=<your_milvus_port>
-   export MILVUS_USER=<your_milvus_username>
-   export MILVUS_PASSWORD=<your_milvus_password>
-
-   # Qdrant
-   export QDRANT_URL=<your_qdrant_url>
-   export QDRANT_PORT=<your_qdrant_port>
-   export QDRANT_GRPC_PORT=<your_qdrant_grpc_port>
-   export QDRANT_API_KEY=<your_qdrant_api_key>
-   export QDRANT_COLLECTION=<your_qdrant_collection>
-
-   # AnalyticDB
-   export PG_HOST=<your_analyticdb_host>
-   export PG_PORT=<your_analyticdb_port>
-   export PG_USER=<your_analyticdb_username>
-   export PG_PASSWORD=<your_analyticdb_password>
-   export PG_DATABASE=<your_analyticdb_database>
-   export PG_COLLECTION=<your_analyticdb_collection>
-
-
-   # Redis
-   export REDIS_HOST=<your_redis_host>
-   export REDIS_PORT=<your_redis_port>
-   export REDIS_PASSWORD=<your_redis_password>
-   export REDIS_INDEX_NAME=<your_redis_index_name>
-   export REDIS_DOC_PREFIX=<your_redis_doc_prefix>
-   export REDIS_DISTANCE_METRIC=<your_redis_distance_metric>
-   export REDIS_INDEX_TYPE=<your_redis_index_type>
-
-   # Llama
-   export LLAMA_INDEX_TYPE=<gpt_vector_index_type>
-   export LLAMA_INDEX_JSON_PATH=<path_to_saved_index_json_file>
-   export LLAMA_QUERY_KWARGS_JSON_PATH=<path_to_saved_query_kwargs_json_file>
-   export LLAMA_RESPONSE_MODE=<response_mode_for_query>
-
-   # Chroma
-   export CHROMA_COLLECTION=<your_chroma_collection>
-   export CHROMA_IN_MEMORY=<true_or_false>
-   export CHROMA_PERSISTENCE_DIR=<your_chroma_persistence_directory>
-   export CHROMA_HOST=<your_chroma_host>
-   export CHROMA_PORT=<your_chroma_port>
-
-   # Azure Cognitive Search
-   export AZURESEARCH_SERVICE=<your_search_service_name>
-   export AZURESEARCH_INDEX=<your_search_index_name>
-   export AZURESEARCH_API_KEY=<your_api_key> (optional, uses key-free managed identity if not set)
-
-   # Azure CosmosDB Mongo vCore
-   export AZCOSMOS_API = <your azure cosmos db api, for now it only supports mongo>
-   export AZCOSMOS_CONNSTR = <your azure cosmos db mongo vcore connection string>
-   export AZCOSMOS_DATABASE_NAME = <your mongo database name>
-   export AZCOSMOS_CONTAINER_NAME = <your mongo container name>
-
-   # Supabase
-   export SUPABASE_URL=<supabase_project_url>
-   export SUPABASE_ANON_KEY=<supabase_project_api_anon_key>
-
-   # Postgres
-   export PG_HOST=<postgres_host>
-   export PG_PORT=<postgres_port>
-   export PG_USER=<postgres_user>
-   export PG_PASSWORD=<postgres_password>
-   export PG_DB=<postgres_database>
-
-   # Elasticsearch
-   export ELASTICSEARCH_URL=<elasticsearch_host_and_port> (either specify host or cloud_id)
-   export ELASTICSEARCH_CLOUD_ID=<elasticsearch_cloud_id>
-
-   export ELASTICSEARCH_USERNAME=<elasticsearch_username>
-   export ELASTICSEARCH_PASSWORD=<elasticsearch_password>
-   export ELASTICSEARCH_API_KEY=<elasticsearch_api_key>
-
-   export ELASTICSEARCH_INDEX=<elasticsearch_index_name>
-   export ELASTICSEARCH_REPLICAS=<elasticsearch_replicas>
-   export ELASTICSEARCH_SHARDS=<elasticsearch_shards>
-
-   # MongoDB Atlas
-   export MONGODB_URI=<mongodb_uri>
-   export MONGODB_DATABASE=<mongodb_database>
-   export MONGODB_COLLECTION=<mongodb_collection>
-   export MONGODB_INDEX=<mongodb_index>
    ```
 
-10. Run the API locally: `poetry run start`
-11. Access the API documentation at `http://0.0.0.0:8000/docs` and test the API endpoints (make sure to add your bearer token).
 
 ## About
 
