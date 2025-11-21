@@ -1,4 +1,5 @@
-# ChatGPT Retrieval Plugin
+# Sistema de Control NSX
+Desarrollado por Grupo Empresarial Insepet
 
 Build Custom GPTs with a Retrieval Plugin backend to give ChatGPT access to personal documents.
 ![Example Custom GPT Screenshot](/assets/example.png)
