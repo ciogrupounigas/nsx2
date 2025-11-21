@@ -64,23 +64,29 @@ Este archivo README proporciona información detallada sobre cómo configurar, d
 Siga estos pasos para configurar y ejecutar rápidamente los parametros esenciales para la distribución de Combustible:
 
 1. Inicie sesión con credenciales de Administrador (Usuario y Paswword).
+
 ![Sesión](./assets/sesion.png)
 
 2. Verifique las opciones activas para su perfil de administrador.
+
 ![Menu](./assets/menu.png)
 
 3. Cortes: Configure las cantidad de cortes que aplica en la estación de servicio.
+
 ![Cortes](./assets/cortes.png)
 
 4. Precios: Configure el nivel de precio del MDI que aplica en la estación de servicio. El Nivel 1 corresponde al precio Publico hacerlo por producto. El sistema permite programación automatica de precios por producto y por nivel.
+
 ![Precios](./assets/Precios.png)
 
 5. Turnos: Verifique que no tenga turnos abiertos antes de iniciar operación.
+
 ![Turnos](./assets/turnos.png)
 
 6. MID el precio del dispensador debe corresponder al aplicado en el Totem: `MID Digital`
 
 7. Isleros: (Vendedores de Servicio) Configure los datos de cada empleado que estara asignado en la distribución de combustible.
+
 ![Isleros](./assets/isleros.png)
 
 9. El sistema ya estaria disponible para iniciar ventas:
