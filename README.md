@@ -1,51 +1,61 @@
-# Sistema de Control NSX-2
-Desarrollado por Grupo Empresarial Insepet
+# 🛠️ Sistema de Control **NSX-2**  
+**Desarrollado por Grupo Empresarial Insepet**
 
-Software de Administración y Monitoreo para Estaciones de Servicio - Grupo Unigas
+Software de Administración y Monitoreo para Estaciones de Servicio – **Grupo Unigas**
+
 ![Grupo Empresarial Insepet](./assets/LogoInsepet-scaled.png)
 
-## Introducción
+---
 
-El Software de Administración y Monitoreo, cubre diferentes necesidades de las Estaciones de Servicio (EDS) desde facturación hasta el soporte, enfocado siempre en lograr excelencia en el servicio. Visualización de los estados de operación de los equipos, permitiendo conocer los combustibles y valores programados, el estado de los despachos y las condiciones de operación de cada posición de llenado.
+## 📌 Introducción
 
-Permite administrar variedad de precios por cada combustible, que pueden ser usados en la asignación de beneficios a clientes corporativos. Se puede realizar reparación remotamente cualquier posible daño del sistema.
+El **Sistema de Administración y Monitoreo NSX-2** está diseñado para cubrir las principales necesidades operativas de las Estaciones de Servicio (EDS), desde la gestión de facturación hasta el monitoreo en tiempo real de equipos y operaciones.
+
+El sistema permite:
+
+- Visualizar el estado operativo de los dispositivos en la estación.  
+- Conocer en tiempo real productos, precios, valores programados y estado de los despachos.  
+- Administrar múltiples niveles de precios por combustible.  
+- Asignar beneficios diferenciados a clientes corporativos.  
+- Realizar diagnósticos y reparaciones remotas.  
+
+Incluye **controles antifraude** que incrementan la seguridad, evitando errores como la contaminación de vehículos al permitir seleccionar el producto y la posición exacta del despacho.
 
 ![Sistema](./assets/sistema.png)
 
-La operación de venta la puedes trabajar desde cualquier dispositivo ANDROID.
-
-Los controles ANTIFRAUDE que hemos desarrollado nos permiten dar seguridad en la operación.
-
-Problemas recurrentes como la contaminación de vehículos son cosas del pasado ya que TU ELIGES el producto y la posición donde vas a despachar el combustible.
+El sistema es compatible con dispositivos **Android**, permitiendo operar ventas de manera móvil y flexible.
 
 ![Arquitectura](./assets/arquitectura.png)
 
-El repositorio está organizado en varios directorios:
+---
 
-| Directory                       | Description                                                                                                                |
-| ------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| [`datastore`](/datastore)       | Contiene la lógica principal de parametros que se debe tener encuenta en el sistema.              |
-| [`docs`](/docs)                 | Includes documentation for setting up and using each vector database provider, webhooks, and removing unused dependencies. |
-| [`examples`](/examples)         | Provides example configurations, authentication methods, and provider-specific examples.                                   |
-| [`local_server`](/local_server) | Contains an implementation of the Retrieval Plugin configured for localhost testing.                                       |
-| [`models`](/models)             | Contains the data models used by the plugin, such as document and metadata models.                                         |
-| [`scripts`](/scripts)           | Offers scripts for processing and uploading documents from different data sources.                                         |
-| [`server`](/server)             | Houses the main FastAPI server implementation.                                                                             |
-| [`services`](/services)         | Contains utility services for tasks like chunking, metadata extraction, and PII detection.                                 |
-| [`tests`](/tests)               | Includes integration tests for various vector database providers.                                                          |
-| [`.well-known`](/.well-known)   | Stores the plugin manifest file and OpenAPI schema, which define the plugin configuration and API specification.           |
+## 📁 Estructura del Repositorio
 
-Este archivo README proporciona información detallada sobre cómo configurar, desarrollar e implementar las funcionalidades del NSX-2 (Manual para Administración y Vendedor de Servicio).
+| Directorio                     | Descripción                                                                                                   |
+| ------------------------------ | -------------------------------------------------------------------------------------------------------------- |
+| [`datastore`](/datastore)       | Lógica principal de parámetros y configuraciones del sistema.                                                 |
+| [`docs`](/docs)                 | Documentación sobre configuración, proveedores, webhooks y dependencias.                                      |
+| [`examples`](/examples)         | Ejemplos de configuración, autenticación y uso por proveedores.                                               |
+| [`local_server`](/local_server) | Implementación del servidor local del plugin de recuperación.                                                 |
+| [`models`](/models)             | Modelos de datos del sistema (documentos, metadatos, etc.).                                                   |
+| [`scripts`](/scripts)           | Scripts para procesamiento y carga de información desde varias fuentes.                                       |
+| [`server`](/server)             | Implementación principal del servidor **FastAPI**.                                                            |
+| [`services`](/services)         | Servicios utilitarios: particionado, metadatos y detección de PII.                                            |
+| [`tests`](/tests)               | Pruebas de integración para diversos proveedores de bases vectoriales.                                        |
+| [`.well-known`](/.well-known)   | Manifiesto del plugin y esquema OpenAPI del sistema.                                                          |
 
-## Tabla de Contenido
+Este README describe cómo configurar, administrar y operar las funcionalidades del sistema **NSX-2** para administradores y vendedores.
+
+---
+
+## 📚 Tabla de Contenido
 
 - [Quickstart](#quickstart)
 - [About](#about)
   - [Funcionalidades](#funcionalidades)
- 
 - [Development](#development)
   - [Setup](#setup)
-    - [General Environment Variables](#general-environment-variables)
+  - [General Environment Variables](#general-environment-variables)
   - [Choosing a Vector Database](#choosing-a-vector-database)
     - [Pinecone](#pinecone)
     - [AnalyticDB](#analyticdb)
@@ -59,47 +69,56 @@ Este archivo README proporciona información detallada sobre cómo configurar, d
 - [Contributors](#contributors)
 - [Future Directions](#future-directions)
 
-## Quickstart
+---
 
-Siga estos pasos para configurar y ejecutar rápidamente los parametros esenciales para la distribución de Combustible:
+## ⚡ Quickstart
 
-1. Inicie sesión con credenciales de Administrador (Usuario y Paswword).
+Siga estos pasos para configurar y habilitar los parámetros esenciales de operación:
+
+### 1. Inicie sesión como Administrador  
+Use su **usuario y contraseña** asignados.
 
 ![Sesión](./assets/sesion.png)
 
-2. Verifique las opciones activas para su perfil de administrador.
+### 2. Verifique las opciones activas  
+Confirme que las funcionalidades habilitadas correspondan al perfil de administrador.
 
 ![Menu](./assets/menu.png)
 
-3. Cortes: Configure las cantidad de cortes que aplica en la estación de servicio.
+### 3. Configure los **Cortes**  
+Defina la cantidad de cortes aplicables en su Estación de Servicio.
 
 ![Cortes](./assets/cortes.png)
 
-4. Precios: Configure el nivel de precio del MDI que aplica en la estación de servicio. El Nivel 1 corresponde al precio Publico hacerlo por producto. El sistema permite programación automatica de precios por producto y por nivel.
+### 4. Configure los **Precios** por Nivel  
+- Nivel 1: **Precio Público**  
+- Configure por **producto**  
+- Permite **programación automática** por nivel y combustible
 
 ![Precios](./assets/Precios.png)
 
-5. Turnos: Verifique que no tenga turnos abiertos antes de iniciar operación.
+### 5. Verifique los **Turnos**  
+Asegúrese de que no existan turnos abiertos antes de iniciar la operación.
 
 ![Turnos](./assets/turnos.png)
 
-6. MID el precio del dispensador debe corresponder al aplicado en el Totem: `MID Digital`
+### 6. Verifique el **MID Digital**  
+El precio del dispensador debe coincidir con el configurado en el **Tótem**.
 
-7. Isleros: (Vendedores de Servicio) Configure los datos de cada empleado que estara asignado en la distribución de combustible.
+### 7. Configure los **Isleros (Vendedores de Servicio)**  
+Registre y asigne los datos del personal autorizado para distribuir combustible.
 
 ![Isleros](./assets/isleros.png)
 
-9. El sistema ya estaria disponible para iniciar ventas:
+### 8. Listo para iniciar ventas
 
-   ```
-   Las claves de los vendedores de servicio son intransferibles
-   
-   La clave del administrador es intransferible y no debe quedar activa la sesion mientras no este presente el responsable de la misma.
+```text
+Las claves de los vendedores de servicio son personales e intransferibles.
 
-   El sistema esta diseñado para que el vendedor de servcio distribuya en cualquier isla ydispensador sin necesidad de estacionarlo en una posición predeterminada.
+La clave del administrador también es intransferible y su sesión no debe quedar activa sin la presencia del responsable.
 
-   ```
-
+El sistema permite que el vendedor opere en cualquier isla o dispensador sin estar asignado a una posición fija.
+```
 
 ## About
 
